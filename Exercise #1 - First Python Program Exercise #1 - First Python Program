@@ -1,0 +1,10 @@
+# IT101-A124-Badoy
+name = input("Enter username: ")
+print(name)
+age=input("Enter age: ")
+print(age)
+firstnumb=int(input("Enter the first number: "))
+print(firstnumb)
+secnumb=int(input("Enter the second number: "))
+product = (firstnumb) * (secnumb)
+print(secnumb), print("the username is",name,"their age is", age,"the product of their number is", product)
