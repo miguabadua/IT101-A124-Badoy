@@ -1,0 +1,6 @@
+# IT101-A124-Badoy
+hours=60
+days=24
+year=365
+
+print ("The number of minutes in a year is", hours*days*year)
