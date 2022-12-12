@@ -1,0 +1,7 @@
+# IT101-A124-Badoy
+
+rate = 3*100000000
+seconds = 365*24*60*60
+distance = rate * seconds
+
+print ("Light travels", distance, "in a year")
