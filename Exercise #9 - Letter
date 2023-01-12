@@ -1,0 +1,16 @@
+#IT101-A124-Badoy
+class Letter:
+    header = "Dear "
+    footer = "\nSincerely,\n\n"
+    text = ""
+    def __init__(self,letterFrom,letterTo):
+        self.header+=letterTo+":\n\n"
+        self.footer+=letterFrom+"\n\n"
+    def getText(self):
+        return self.header+self.text+self.footer
+    def addLine(self,line):
+        self.text+=line+"\n"
+l = Letter("Mary","John")
+l.addLine("I am sorry we must part.")
+l.addLine("I wish you all the best.")
+print(l.getText())
