@@ -1,0 +1,32 @@
+# IT101-A124-Badoy
+class Employee:
+    def __init__(self, name, salary):
+        self._name = name
+        self._salary = salary
+    def getName(self):
+        return self._name
+    def getSalary(self):
+        return self._salary
+    def __repr__(self):
+        return self._name + " has a salary of " + str(self._salary)
+class Manager(Employee):
+    def __init__(self, name, salary, department):
+        super().__init__(name, salary)
+        self._department = department
+    def getDepartment(self):
+        return self._department
+    def __repr__(self):
+        return self._name + " has a salary of " + str(self._salary) + " and manages the " + self._department + " department"
+class Executive(Manager):
+    def __init__(self, name, salary, department):
+        super().__init__(name, salary, department)
+    def __repr__(self):
+        return self._name + " has a a salary of " + str(self._salary) + " and is the executive " + self._department + " department"
+e = Employee("John Smith", 45000.000)
+print(e.__repr__())
+
+m = Manager("Jane Doe", 60000.000, "Widgets")
+print(m.__repr__())
+
+e = Executive("exName", 3000, "Thingies")
+print(e.__repr__())
