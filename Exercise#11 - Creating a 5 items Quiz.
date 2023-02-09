@@ -1,0 +1,45 @@
+#IT101 A124 Badoy
+x = 0
+score = x
+
+print("1: 2x16")
+answer_2 = input("a)48\nb)8\nc)16\nd)32\nYour Answer: ")
+if answer_2.lower() == "d" or answer_2.lower() == "D" or answer_2.lower() == "32" :
+    print("Correct")
+    x = x + 1
+else:
+    print("Incorrect")
+print("2: 9x5")
+answer_2 = input("a)25\nb)45\nc)50\nd)40\nYour Answer: ")
+if answer_2.lower() == "b" or answer_2.lower() == "B" or answer_2.lower() == "45" :
+    print("Correct")
+    x = x + 1
+else:
+    print("Incorrect")
+
+print("3: 6x8")
+answer_2 = input("a)56\nb)42\nc)48\nd)32\nYour Answer: ")
+if answer_2.lower() == "c" or answer_2.lower() == "c" or answer_2.lower() == "48" :
+    print("Correct")
+    x = x + 1
+else:
+    print("Incorrect")
+
+print("4: 7x7")
+answer_2 = input("a)49\nb)48\nc)63\nd)28\nYour Answer: ")
+if answer_2.lower() == "a" or answer_2.lower() == "A" or answer_2.lower() == "49" :
+    print("Correct")
+    x = x + 1
+else:
+    print("Incorrect")
+
+print("5: 9x3")
+answer_2 = input("a)27\nb)36\nc)32\nd)30\nYour Answer: ")
+if answer_2.lower() == "a" or answer_2.lower() == "A" or answer_2.lower() == "27" :
+    print("Correct")
+    x = x + 1
+else:
+    print("Incorrect")
+#Total Score
+score = float(x / 5) * 100
+print(x,"out of 5, that is",score, "%")
